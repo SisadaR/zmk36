@@ -56,73 +56,73 @@
 
         base {
             bindings = <
-   &kp Q       &kp W       &kp E         &kp R         &kp T            &kp Y         &kp U        &kp I       &kp O       &kp P
-   &mh LCTRL A &mh LALT S  &mh LGUI D    &mh LSHIFT F  &lt 3 G          &kp H         &mh RSHIFT J &mh RGUI K  &mh RALT L  &mh RCTRL SEMICOLON
-   &kp Z       &kp X       &kp C         &kp V         &kp B            &kp N         &kp M        &kp COMMA   &kp DOT     &kp FSLH
-                           &mo 7         &mo 1         &lt 4 SPACE      &lt 4 RET     &mo 2        &tog 6
+   &mt LCTRL ESC    &kp Q       &kp W       &kp E         &kp R         &kp T            &kp Y         &kp U        &kp I       &kp O       &kp P                   &kp BACKSPACE
+   &lt 3 TAB        &mh LCTRL A &mh LALT S  &mh LGUI D    &mh LSHIFT F  &lt 3 G          &kp H         &mh RSHIFT J &mh RGUI K  &mh RALT L  &mh RCTRL SEMICOLON     &lt 5 APOS
+   &kp LSHIFT       &kp Z       &kp X       &kp C         &kp V         &kp B            &kp N         &kp M        &kp COMMA   &kp DOT     &kp FSLH                &kp LALT
+                                            &mo 7         &mo 1         &lt 4 SPACE      &lt 4 RET     &mo 2        &tog 6
             >;
         };
 
         raise {
             bindings = <
-    &kp N1          &kp N2      &kp N3          &kp N4          &kp N5              &kp N6             &kp N7          &kp N8     &kp N9           &kp N0
-    &kp LBKT        &trans      &kp PLUS        &kp KP_MINUS    &kp LPAR            &kp RPAR           &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET &kp RIGHT_BRACKET
-    &kp LESS_THAN   &trans      &kp KP_EQUAL    &kp UNDERSCORE  &kp LEFT_BRACE      &kp RIGHT_BRACE    &trans          &trans     &trans           &kp GREATER_THAN
-                                &trans          &trans          &trans              &kp TAB            &kp RG(SPACE)   &trans
+ &kp GRAVE         &kp N1  &kp N2        &kp N3          &kp N4          &kp N5          &kp N6             &kp N7          &kp N8     &kp N9           &kp N0              &kp DELETE
+    &trans       &kp LBKT  &trans      &kp PLUS    &kp KP_MINUS        &kp LPAR          &kp RPAR           &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET &kp RIGHT_BRACKET   &kp BACKSLASH
+    &trans  &kp LESS_THAN  &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp LEFT_BRACE          &kp RIGHT_BRACE    &trans          &trans     &trans           &kp GREATER_THAN    &trans
+                                         &trans          &trans          &trans          &kp TAB            &kp RG(SPACE)   &trans
             >;
         };
 
         lower {
             bindings = <
-    &kp EXCL    &kp AT      &kp HASH    &kp DLLR        &kp PRCNT           &kp CARET   &kp AMPS    &kp KP_MULTIPLY &kp LPAR        &kp RPAR
-    &trans      &trans      &kp F1      &kp F2          &kp F3              &kp F4      &kp F5      &kp F6          &kp LEFT_BRACE  &kp RIGHT_BRACE
-    &trans      &trans      &kp F7      &kp F8          &kp F9              &kp F10     &kp F11     &kp F12         &trans          &trans
-                            &trans      &kp LG(SPACE)   &kp TAB             &trans      &trans      &trans
+    &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp DLLR        &kp PRCNT           &kp CARET   &kp AMPS    &kp KP_MULTIPLY &kp LPAR        &kp RPAR        &kp DEL
+    &trans      &trans      &trans      &kp F1      &kp F2          &kp F3              &kp F4      &kp F5      &kp F6          &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE
+    &trans      &trans      &trans      &kp F7      &kp F8          &kp F9              &kp F10     &kp F11     &kp F12         &trans          &trans          &trans
+                                        &trans      &kp LG(SPACE)   &kp TAB             &trans      &trans      &trans
             >;
         };
 
         numpad {
             bindings = <
-    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1      &trans         &kp KP_PLUS         &kp KP_N7        &kp KP_N8  &kp KP_N9  &trans
-    &trans        &trans        &trans        &trans            &trans         &kp KP_MINUS        &kp KP_N4        &kp KP_N5  &kp KP_N6  &trans
-    &bt BT_CLR    &trans        &trans        &trans            &trans         &kp KP_MULTIPLY     &kp KP_N1        &kp KP_N2  &kp KP_N3  &trans
-                                &trans        &trans            &kp EQUAL      &kp KP_SLASH        &kp KP_NUMBER_0  &kp KP_DOT
+ &bt BT_CLR  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1     &trans         &kp KP_PLUS         &kp KP_N7        &kp KP_N8  &kp KP_N9  &trans  &trans
+     &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_MINUS        &kp KP_N4        &kp KP_N5  &kp KP_N6  &trans  &trans
+     &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_MULTIPLY     &kp KP_N1        &kp KP_N2  &kp KP_N3  &trans  &trans
+                                               &trans        &trans     &kp EQUAL      &kp KP_SLASH        &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
 
         Direction {
             bindings = <
- &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END             &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT
- &kp LSHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT
- &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE   &trans          &trans          &trans          &trans
-                             &trans          &trans          &kp SPACE           &kp ENTER       &trans          &trans
+ &kp DELETE &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END             &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &kp DELETE
+ &trans     &kp LSHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
+ &trans     &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE   &trans          &trans          &trans          &trans      &trans
+                                        &trans          &trans          &kp SPACE           &kp ENTER       &trans          &trans
             >;
         };
         
         number {
             bindings = <
-     &trans        &trans        &trans        &trans     &trans         &kp KP_PLUS         &kp N7   &kp N8  &kp N9  &trans
-     &trans        &trans        &trans        &trans     &trans         &kp KP_MINUS        &kp N4   &kp N5  &kp N6  &trans
-     &trans        &trans        &trans        &trans     &trans         &kp KP_MULTIPLY     &kp N1   &kp N2  &kp N3  &trans
-                                 &trans        &trans     &kp EQUAL      &kp KP_SLASH        &kp N0   &kp KP_DOT
+     &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_PLUS         &kp N7   &kp N8  &kp N9  &trans  &trans
+     &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_MINUS        &kp N4   &kp N5  &kp N6  &trans  &trans
+     &trans        &trans        &trans        &trans        &trans     &trans         &kp KP_MULTIPLY     &kp N1   &kp N2  &kp N3  &trans  &trans
+                                               &trans        &trans     &kp EQUAL      &kp KP_SLASH        &kp N0   &kp KP_DOT
             >;
         };
         
         FixedDirection {
             bindings = <
- &trans      &trans          &trans          &trans          &trans              &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT
- &kp LCTRL   &kp LALT        &kp LGUI        &kp LSHIFT      &trans              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT
- &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE   &trans          &trans          &trans          &trans
-                             &trans          &trans          &kp SPACE           &kp ENTER       &trans          &trans
+ &trans     &trans      &trans          &trans          &trans          &trans              &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &kp DELETE
+ &trans     &kp LCTRL   &kp LALT        &kp LGUI        &kp LSHIFT      &trans              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
+ &trans     &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE   &trans          &trans          &trans          &trans      &trans
+                                        &trans          &trans          &kp SPACE           &kp ENTER       &trans          &trans
                                         >;
         };
         
         StickyKey {
             bindings = <
-&trans      &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans
-&sk LCTRL   &sk LALT        &sk LGUI        &sk LSHIFT      &sk RIGHT_ARROW     &trans          &trans          &trans          &trans          &trans
-&trans      &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans
-                            trans          &trans          &trans              &trans          &trans          &trans
+ &trans     &trans      &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans &kp DELETE
+ &trans     &sk LCTRL   &sk LALT        &sk LGUI        &sk LSHIFT      &sk RIGHT_ARROW     &trans          &trans          &trans          &trans          &trans  &trans
+ &trans     &trans      &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &trans      &trans
+                                        &trans          &trans          &trans              &trans          &trans          &trans
                                         >;
         };
     };
