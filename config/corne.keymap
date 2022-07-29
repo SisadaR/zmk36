@@ -23,7 +23,7 @@
             key-positions = <1 2>;
         };
 
-        APOS {
+        apos {
             timeout-ms = <100>;
             bindings = <&kp APOS>;
             key-positions = <21 22>;
