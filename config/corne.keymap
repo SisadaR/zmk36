@@ -71,7 +71,7 @@
    &trans    &kp Q        &kp W             &kp E         &kp R         &kp T                   &kp Y         &kp U        &kp I       &kp O       &kp P                   &trans
    &trans    &mh LCTRL A  &mh LALT S        &mh LGUI D    &mh LSHIFT F  &kp G                   &kp H         &mh RSHIFT J &mh RGUI K  &mh RALT L  &mh RCTRL SEMICOLON     &trans
    &trans    &kp Z        &kp X             &kp C         &kp V         &lt 3 B                 &kp N         &kp M        &kp COMMA   &kp DOT     &lt 5 FSLH              &trans
-                                            &lt 7 ESC     &lt 1 TAB     &lt 4 SPACE             &lt 4 RET     &lt 2 APOS   &lt 7 DEL 
+                                            &lt 7 ESC     &lt 1 TAB     &lt 4 SPACE             &lt 4 RET     &lt 2 APOS   &lt 7 BACKSPACE 
             >;
         };
 
