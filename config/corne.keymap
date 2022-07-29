@@ -22,12 +22,6 @@
             bindings = <&kp TAB>;
             key-positions = <1 2>;
         };
-
-        apos {
-            timeout-ms = <100>;
-            bindings = <&kp APOS>;
-            key-positions = <21 22>;
-        };
     };
 
     macros {
