@@ -71,19 +71,19 @@
 
         raise1 {
             bindings = <
- &kp GRAVE         &kp N1  &kp N2        &kp N3          &kp N4          &kp N5          &kp N6             &kp N7          &kp N8     &kp N9           &kp N0              &kp DELETE
-    &trans       &kp LBKT  &trans      &kp PLUS    &kp KP_MINUS        &kp LPAR          &kp RPAR           &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET &kp RIGHT_BRACKET   &kp BACKSLASH
+    &trans         &kp N1  &kp N2        &kp N3          &kp N4          &kp N5          &kp N6             &kp N7          &kp N8     &kp N9           &kp N0              &trans
+    &trans       &kp LBKT  &trans      &kp PLUS    &kp KP_MINUS        &kp LPAR          &kp RPAR           &kp MINUS       &kp EQUAL  &kp LEFT_BRACKET &kp RIGHT_BRACKET   &trans
     &trans  &kp LESS_THAN  &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp LEFT_BRACE          &kp RIGHT_BRACE    &trans          &trans     &trans           &kp GREATER_THAN    &trans
-                                         &trans          &trans          &trans          &trans             &kp RG(SPACE)   &trans
+                                         &trans          &trans          &trans          &trans             &kp RG(SPACE)   &kp BACKSLASH
             >;
         };
 
         lower2 {
             bindings = <
-    &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp DLLR        &kp PRCNT           &kp CARET   &kp AMPS    &kp KP_MULTIPLY &kp LPAR        &kp RPAR        &kp DEL
-    &trans      &trans      &trans      &kp F1      &kp F2          &kp F3              &kp F4      &kp F5      &kp F6          &kp LEFT_BRACE  &kp RIGHT_BRACE &kp PIPE
+    &trans      &kp EXCL    &kp AT      &kp HASH    &kp DLLR        &kp PRCNT           &kp CARET   &kp AMPS    &kp KP_MULTIPLY &kp LPAR        &kp RPAR        &trans
+    &trans      &kp GRAVE   &kp TILDE   &kp F1      &kp F2          &kp F3              &kp F4      &kp F5      &kp F6          &kp LEFT_BRACE  &kp RIGHT_BRACE &trans
     &trans      &trans      &trans      &kp F7      &kp F8          &kp F9              &kp F10     &kp F11     &kp F12         &trans          &trans          &trans
-                                        &trans      &kp LG(SPACE)   &trans              &trans      &trans      &trans
+                                        &trans      &kp LG(SPACE)   &trans              &trans      &trans      &kp PIPE
             >;
         };
 
@@ -99,10 +99,10 @@
 
         Direction4 {
             bindings = <
- &kp DELETE &kp INSERT  &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END             &kp HOME            &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &kp DELETE
- &trans     &kp LSHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
- &trans     &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE       &trans          &trans          &trans          &trans      &trans
-                                        &trans          &trans          &kp TAB             &kp TAB             &trans          &trans
+ &trans     &trans          &trans          &trans          &trans          &trans                  &kp HOME            &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &trans
+ &trans     &kp LCTRL       &kp LALT        &kp LGUI        &kp LSHIFT      &kp RIGHT_ARROW         &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
+ &trans     &trans          &trans          &trans          &trans          &kp DEL                 &kp BACKSPACE       &trans          &trans          &trans          &trans      &trans
+                                            &trans          &trans          &kp TAB                 &kp TAB             &trans          &trans
             >;
         };
         
@@ -117,8 +117,8 @@
         
         FixedDirection6 {
             bindings = <
- &trans     &trans      &trans          &trans          &trans          &trans              &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &kp DELETE
- &trans     &kp LCTRL   &kp LALT        &kp LGUI        &kp LSHIFT      &trans              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp RSHIFT  &trans
+ &trans     &trans      &trans          &trans          &trans          &trans              &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END         &kp INSERT  &trans
+ &trans     &kp LCTRL   &kp LALT        &kp LGUI        &kp LSHIFT      &trans              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp RSHIFT  &trans
  &trans     &trans      &trans          &trans          &trans          &kp DEL             &kp BACKSPACE   &trans          &trans          &trans          &trans      &trans
                                         &trans          &trans          &kp SPACE           &kp ENTER       &trans          &trans
                                         >;
@@ -126,7 +126,7 @@
         
         StickyKey7 {
             bindings = <
- &trans     &bt BT_CLR  &bt BT_SEL 4    &bt BT_SEL 3    &bt BT_SEL 2    &bt BT_SEL 1            &trans          &trans          &trans          &trans          &trans &kp DELETE
+ &trans     &bt BT_CLR  &bt BT_SEL 4    &bt BT_SEL 3    &bt BT_SEL 2    &bt BT_SEL 1            &trans          &trans          &trans          &trans          &trans &trans
  &trans     &sk LCTRL   &sk LALT        &sk LGUI        &sk LSHIFT      &sk RIGHT_ARROW         &trans          &trans          &trans          &trans          &trans  &trans
  &trans     &trans      &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &trans      &trans
                                         &trans          &trans          &trans                  &trans          &trans          &trans
