@@ -103,19 +103,18 @@
             bindings = <&sk LALT>;
             key-positions = <3 9>;
         };
-
-         _lshift {
+        
+        _lshift {
             timeout-ms = <100>;
             bindings = <&kp LSHIFT>;
-            key-positions = <25 26>
-        };
-        
-        _rshift {
-            timeout-ms = <100>;
-            bindings = <&kp RSHIFT>;
-            key-positions = <33 34>
+            key-positions = <25 26>;
         };
 
+        _lshift {
+            timeout-ms = <100>;
+            bindings = <&kp RSHIFT>;
+            key-positions = <33 34>;
+        };
     };  
 
     macros {
