@@ -109,7 +109,7 @@
             bindings = <&kp LSHIFT>;
             key-positions = <25 26>
         };
-
+        
         _rshift {
             timeout-ms = <100>;
             bindings = <&kp RSHIFT>;
