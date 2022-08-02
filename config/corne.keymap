@@ -51,42 +51,40 @@
 
         _lgui {
             timeout-ms = <100>;
-            bindings = <&sk LGUI>;
+            bindings = <&kp LGUI>;
             key-positions = <29 38>;
         };
 
         _lctrl {
             timeout-ms = <100>;
-            bindings = <&sk LCTRL>;
+            bindings = <&kp LCTRL>;
             key-positions = <28 38>;
         };
 
         _lalt {
             timeout-ms = <100>;
-            bindings = <&sk LALT>;
+            bindings = <&kp LALT>;
             key-positions = <27 38>;
         };
 
    
         _rgui {
             timeout-ms = <100>;
-            bindings = <&sk LGUI>;
+            bindings = <&kp LGUI>;
             key-positions = <30 39>;
         };
 
         _rctrl {
             timeout-ms = <100>;
-            bindings = <&sk LCTRL>;
+            bindings = <&kp LCTRL>;
             key-positions = <31 39>;
         };
 
         _ralt {
             timeout-ms = <100>;
-            bindings = <&sk LALT>;
+            bindings = <&kp LALT>;
             key-positions = <32 39>;
         };
-
-   
 
     };  
 
@@ -135,7 +133,7 @@
    &trans    &kp Q          &kp W             &kp E         &kp R             &kp T                     &kp Y           &kp U        &kp I            &kp O       &kp P              &trans
    &trans    &lt 3 A        &mh LCTRL S       &mh LALT D    &mh LGUI F        &kp G                     &kp H           &mh RGUI J   &mh RALT K       &mh RCTRL L &lt 5 SEMICOLON    &trans
    &trans    &mh LSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N           &kp M        &kp COMMA        &kp DOT     &mh RSHIFT FSLH    &trans
-                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &mt RSHIFT RET  &lt 2 APOS   &lt 7 BACKSPACE 
+                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &lt 4 RET       &lt 2 APOS   &lt 7 BACKSPACE 
             >;
         };
 
