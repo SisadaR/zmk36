@@ -95,13 +95,13 @@
         _cctrl {
             timeout-ms = <100>;
             bindings = <&sk LCTRL>;
-            key-positions = <5 6>;
+            key-positions = <4 8>;
         };
 
         _calt {
             timeout-ms = <100>;
             bindings = <&sk LALT>;
-            key-positions = <4 7>;
+            key-positions = <3 9>;
         };
 
     };  
@@ -150,8 +150,8 @@
             bindings = <
    &trans    &kp Q          &kp W             &kp E         &kp R             &kp T                     &kp Y           &kp U               &kp I            &kp O      &kp P              &trans
    &trans    &lt 3 A        &kp S             &kp D         &kp F             &kp G                     &kp H           &kp J               &kp K            &kp L      &lt 5 SEMICOLON    &trans
-   &trans    &mt LSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N           &kp M               &kp COMMA        &kp DOT    &mt RSHIFT FSLH    &trans
-                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &lt 2 RET       &mt LSHIFT APOS     &lt 7 BACKSPACE 
+   &trans    &mh LSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N           &kp M               &kp COMMA        &kp DOT    &mh RSHIFT FSLH    &trans
+                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &lt 2 RET       &mt LSHIFT APOS          &lt 7 BACKSPACE 
             >;
         };
 
@@ -160,7 +160,7 @@
     &trans      &kp N1          &kp N2          &kp N3          &kp N4          &kp N5              &kp N6             &kp N7          &kp N8           &kp N9           &kp N0              &trans
     &trans      &kp LBKT        &trans          &kp PLUS        &kp KP_MINUS    &kp LPAR            &kp RPAR           &kp MINUS       &kp EQUAL        &kp LEFT_BRACKET &kp RIGHT_BRACKET   &trans
     &trans      &kp LESS_THAN   &trans          &kp KP_EQUAL    &kp UNDERSCORE  &kp LEFT_BRACE      &kp RIGHT_BRACE    &trans          &trans           &trans           &kp GREATER_THAN    &trans
-                                                &trans          &trans          &trans              &trans             &kp RG(SPACE)   &kp BACKSLASH
+                                                &trans          &trans          &trans              &trans             &trans          &kp BACKSLASH
             >;
         };
 
