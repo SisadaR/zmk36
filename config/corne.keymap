@@ -18,9 +18,9 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
+        _esc {
             timeout-ms = <100>;
-            bindings = <&kp TAB>;
+            bindings = <&kp ESC>;
             key-positions = <1 2>;
         };
 
@@ -30,42 +30,63 @@
             key-positions = <9 10>;
         };
 
+        _enter {
+            timeout-ms = <100>;
+            bindings = <&kp ENTER>;
+            key-positions = <16 19>;
+        };
+
         move {
             timeout-ms = <100>;
             bindings = <&tog 6>;
             key-positions = <29 30>;
         };
 
-        _esc {
+        _tab {
             timeout-ms = <100>;
-            bindings = <&kp ESC>;
+            bindings = <&kp TAB>;
             key-positions = <13 14>;
         };
 
 
-        _gui {
+        _lgui {
+            timeout-ms = <100>;
+            bindings = <&sk LGUI>;
+            key-positions = <29 38>;
+        };
+
+        _lctrl {
+            timeout-ms = <100>;
+            bindings = <&sk LCTRL>;
+            key-positions = <28 38>;
+        };
+
+        _lalt {
+            timeout-ms = <100>;
+            bindings = <&sk LALT>;
+            key-positions = <27 38>;
+        };
+
+   
+        _rgui {
             timeout-ms = <100>;
             bindings = <&sk LGUI>;
             key-positions = <30 39>;
         };
 
-        _ctrl {
+        _rctrl {
             timeout-ms = <100>;
             bindings = <&sk LCTRL>;
-            key-positions = <30 40>;
+            key-positions = <31 39>;
         };
 
-        _alt {
+        _ralt {
             timeout-ms = <100>;
             bindings = <&sk LALT>;
-            key-positions = <40 41>;
+            key-positions = <32 39>;
         };
 
-        _shift {
-            timeout-ms = <100>;
-            bindings = <&sk LSHIFT>;
-            key-positions = <31 40>;
-        };
+   
 
     };  
 
@@ -111,10 +132,10 @@
         
         base0 {
             bindings = <
-   &trans    &kp Q          &kp W             &kp E         &kp R             &kp T                     &kp Y         &kp U        &kp I            &kp O       &kp P              &trans
-   &trans    &lt 3 A        &mh LCTRL S       &mh LALT D    &mh LGUI F        &kp G                     &kp H         &mh RGUI J   &mh RALT K       &mh RCTRL L &lt 5 SEMICOLON    &trans
-   &trans    &mh LSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N         &kp M        &kp COMMA        &kp DOT     &mh RSHIFT FSLH    &trans
-                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &lt 4 RET     &lt 2 APOS   &lt 7 BACKSPACE 
+   &trans    &kp Q          &kp W             &kp E         &kp R             &kp T                     &kp Y           &kp U        &kp I            &kp O       &kp P              &trans
+   &trans    &lt 3 A        &mh LCTRL S       &mh LALT D    &mh LGUI F        &kp G                     &kp H           &mh RGUI J   &mh RALT K       &mh RCTRL L &lt 5 SEMICOLON    &trans
+   &trans    &mh LSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N           &kp M        &kp COMMA        &kp DOT     &mh RSHIFT FSLH    &trans
+                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &mt RSHIFT RET  &lt 2 APOS   &lt 7 BACKSPACE 
             >;
         };
 
