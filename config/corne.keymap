@@ -95,13 +95,13 @@
         _cctrl {
             timeout-ms = <100>;
             bindings = <&sk LCTRL>;
-            key-positions = <4 8>;
+            key-positions = <4 7>;
         };
 
         _calt {
             timeout-ms = <100>;
             bindings = <&sk LALT>;
-            key-positions = <3 9>;
+            key-positions = <3 8>;
         };
         
         _lshift {
