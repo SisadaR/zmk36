@@ -48,44 +48,6 @@
             key-positions = <13 14>;
         };
 
-
-        _lgui {
-            timeout-ms = <100>;
-            bindings = <&kp LGUI>;
-            key-positions = <29 38>;
-        };
-
-        _lctrl {
-            timeout-ms = <100>;
-            bindings = <&kp LCTRL>;
-            key-positions = <28 38>;
-        };
-
-        _lalt {
-            timeout-ms = <100>;
-            bindings = <&kp LALT>;
-            key-positions = <27 38>;
-        };
-
-   
-        _rgui {
-            timeout-ms = <100>;
-            bindings = <&kp LGUI>;
-            key-positions = <30 39>;
-        };
-
-        _rctrl {
-            timeout-ms = <100>;
-            bindings = <&kp LCTRL>;
-            key-positions = <31 39>;
-        };
-
-        _ralt {
-            timeout-ms = <100>;
-            bindings = <&kp LALT>;
-            key-positions = <32 39>;
-        };
-
          _cgui {
             timeout-ms = <100>;
             bindings = <&sk LGUI>;
@@ -131,22 +93,11 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        ms: homerow_mods_slow {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_200";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
         compatible = "zmk,keymap";
-        
-        base0 {
+            base0 {
             bindings = <
    &trans    &kp Q          &kp W             &kp E         &kp R             &kp T                     &kp Y           &kp U        &kp I            &kp O       &kp P              &trans
    &trans    &lt 3 A        &mh LCTRL S       &mh LALT D    &mh LGUI F        &kp G                     &kp H           &mh RGUI J   &mh RALT K       &mh RCTRL L &lt 5 SEMICOLON    &trans
@@ -154,8 +105,8 @@
                                               &lt 7 ESC     &mo 1             &lt 4 SPACE               &mh RSHIFT RET  &lt 2 APOS   &lt 7 BACKSPACE 
             >;
         };
-
-        raise1 {
+        
+    raise1 {
             bindings = <
     &trans      &kp N1          &kp N2          &kp N3          &kp N4          &kp N5              &kp N6             &kp N7          &kp N8           &kp N9           &kp N0              &trans
     &trans      &kp LBKT        &trans          &kp PLUS        &kp KP_MINUS    &kp LPAR            &kp RPAR           &kp MINUS       &kp EQUAL        &kp LEFT_BRACKET &kp RIGHT_BRACKET   &trans
