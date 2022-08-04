@@ -105,12 +105,12 @@
                                               &lt 7 ESC     &mo 1             &lt 4 SPACE               &mh RSHIFT RET  &lt 2 APOS   &lt 7 BACKSPACE 
             >;
         };
-        
+
     raise1 {
             bindings = <
     &trans      &kp N1          &kp N2          &kp N3          &kp N4          &kp N5              &kp N6             &kp N7          &kp N8           &kp N9           &kp N0              &trans
     &trans      &kp LBKT        &trans          &kp PLUS        &kp KP_MINUS    &kp LPAR            &kp RPAR           &kp MINUS       &kp EQUAL        &kp LEFT_BRACKET &kp RIGHT_BRACKET   &trans
-    &trans      &kp LESS_THAN   &trans          &kp KP_EQUAL    &kp UNDERSCORE  &kp LEFT_BRACE      &kp RIGHT_BRACE    &trans          &trans           &trans           &kp GREATER_THAN    &trans
+    &trans      &kp LESS_THAN  &kp LEFT_BRACE   &kp KP_EQUAL    &kp UNDERSCORE  &trans              &trans             &trans          &trans            &kp RIGHT_BRACE           &kp GREATER_THAN    &trans
                                                 &trans          &trans          &trans              &trans             &kp RG(SPACE)   &kp BACKSLASH
             >;
         };
