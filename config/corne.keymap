@@ -54,6 +54,12 @@
             key-positions = <3 37>;
         };
 
+        _shift {
+            timeout-ms = <100>;
+            bindings = <&sk LSHFT>;
+            key-positions = <25 37>;
+        };
+
         _swap {
             timeout-ms = <100>;
             bindings = <&kp LG(SPACE)>;
@@ -174,8 +180,8 @@
 
         Symbol9 {
             bindings = <
- &trans     &trans      &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &trans          &kp BACKSPACE
- &trans     &trans      &trans          &kp KP_MINUS    &kp LEFT_BRACE  &kp LPAR         &kp RPAR       &kp RIGHT_BRACE     &kp KP_PLUS     &trans          &trans          &trans
+ &trans     &kp ESC     &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &kp BACKSPACE   &trans          
+ &trans     &kp TAB     &trans          &kp KP_MINUS    &kp LEFT_BRACE  &kp LPAR         &kp RPAR       &kp RIGHT_BRACE     &kp KP_PLUS     &trans          &trans          &trans
  &trans     &trans      &trans          &kp UNDERSCORE  &kp LESS_THAN   &kp LBKT         &kp RBKT       &kp GREATER_THAN    &kp EQUAL       &trans          &trans          &trans
                                         &trans          &trans          &trans           &trans         &trans              &trans
                                         >;
