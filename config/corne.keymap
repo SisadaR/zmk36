@@ -53,6 +53,12 @@
             bindings = <&sk LALT>;
             key-positions = <3 37>;
         };
+
+        _swap {
+            timeout-ms = <100>;
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <8 9>;
+        };       
     };  
 
     macros {
@@ -123,9 +129,9 @@
 
         Direction4 {
             bindings = <
- &trans     &trans          &trans          &trans          &trans          &trans                  &kp HOME            &kp PAGE_DOWN   &kp PAGE_UP     &kp END             &kp INSERT  &trans
- &trans     &trans          &kp LCTRL       &kp LALT        &kp LGUI        &trans                  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &kp RSHIFT  &trans
- &trans     &kp LSHIFT      &trans          &trans          &trans          &kp DEL                 &kp BACKSPACE       &trans          &trans          &trans              &trans      &trans
+ &trans     &trans          &trans          &trans          &trans          &kp INSERT              &kp HOME            &kp PAGE_DOWN   &kp PAGE_UP     &kp END             &kp BACKSPACE   &trans
+ &trans     &trans          &kp LCTRL       &kp LALT        &kp LGUI        &trans                  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &kp RSHIFT      &trans
+ &trans     &kp LSHIFT      &trans          &trans          &trans          &kp DEL                 &kp BACKSPACE       &trans          &trans          &trans              &trans          &trans
                                             &trans          &trans          &kp TAB                 &kp TAB             &trans          &trans
             >;
         };
@@ -168,7 +174,7 @@
 
         Symbol9 {
             bindings = <
- &trans     &trans      &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &trans          &trans
+ &trans     &trans      &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &trans          &kp BACKSPACE
  &trans     &trans      &trans          &kp KP_MINUS    &kp LEFT_BRACE  &kp LPAR         &kp RPAR       &kp RIGHT_BRACE     &kp KP_PLUS     &trans          &trans          &trans
  &trans     &trans      &trans          &kp UNDERSCORE  &kp LESS_THAN   &kp LBKT         &kp RBKT       &kp GREATER_THAN    &kp EQUAL       &trans          &trans          &trans
                                         &trans          &trans          &trans           &trans         &trans              &trans
