@@ -101,15 +101,15 @@
    &trans    &kp Q          &kp W             &kp E         &kp R             &kp T                     &kp Y           &kp U        &kp I            &kp O       &kp P              &trans
    &trans    &lt 3 A        &mh LCTRL S       &mh LALT D    &mh LGUI F        &kp G                     &kp H           &mh RGUI J   &mh RALT K       &mh RCTRL L &lt 5 SEMICOLON    &trans
    &trans    &mh LSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N           &kp M        &kp COMMA        &kp DOT     &mh RSHIFT FSLH    &trans
-                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &lt 9 RET       &lt 2 APOS   &lt 8 BACKSPACE 
+                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &lt 8 RET       &lt 2 APOS   &lt 7 BACKSPACE 
             >;
         };
 
     raise1 {
             bindings = <
-    &trans      &kp N1          &kp N2              &kp N3          &kp N4          &kp N5              &kp N6             &kp N7          &kp N8           &kp N9           &kp N0             &trans
-    &trans      &trans          &trans              &kp PLUS        &kp KP_MINUS    &trans              &trans             &kp MINUS       &kp EQUAL        &kp LEFT_BRACKET &kp RIGHT_BRACKET  &trans
-    &trans      &trans          &trans              &kp KP_EQUAL    &kp UNDERSCORE  &trans              &trans             &trans          &trans           &trans           &trans             &trans
+    &trans      &kp N1          &kp N2              &kp N3          &kp N4          &kp N5              &kp N6            &kp N7          &kp N8           &kp N9           &kp N0             &trans
+    &trans      &trans          &trans              &kp PLUS        &kp KP_MINUS    &kp LPAR            &kp RPAR          &kp MINUS       &kp EQUAL        &kp LEFT_BRACKET &kp RIGHT_BRACKET  &trans
+    &trans      &trans          &trans              &kp KP_EQUAL    &kp UNDERSCORE  &kp LBKT            &kp RBKT          &trans          &trans           &trans           &trans             &trans
                                                     &trans          &trans          &trans              &trans            &kp LG(SPACE)    &kp BACKSLASH
             >;
         };
@@ -141,7 +141,7 @@
                                             &trans          &trans          &kp TAB                 &kp TAB             &trans          &trans
             >;
         };
-        
+         
         number5 {
             bindings = <
      &trans        &trans        &trans        &trans        &trans     &trans              &kp KP_PLUS         &kp N7   &kp N8  &kp N9  &trans  &trans
@@ -164,25 +164,16 @@
             bindings = <
  &trans     &trans      &bt BT_SEL 4    &bt BT_SEL 3    &bt BT_SEL 2    &bt BT_SEL 1            &bt BT_CLR      &trans          &trans          &trans          &kp CAPS    &trans
  &trans     &trans      &trans          &trans          &trans          &out OUT_TOG            &trans          &trans          &trans          &trans          &kp KP_NUM  &trans
- &trans     &trans      &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &trans      &trans
+ &trans     &trans      &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &tog 6      &trans
                                         &trans          &trans          &trans                  &trans          &trans          &trans
                                         >;
         };
 
-        Sticky8 {
-            bindings = <
- &trans     &trans      &trans          &trans          &trans          &trans           &trans     &trans      &trans          &trans          &tog 6          &trans
- &trans     &trans      &sk LCTRL       &sk LALT        &sk LGUI        &trans           &trans     &trans      &trans          &trans          &trans          &trans
- &trans     &sk LSHIFT  &trans          &trans          &trans          &trans           &trans     &trans      &trans          &trans          &trans          &trans
-                                        &trans          &trans          &trans           &trans     &trans      &trans
-                                        >;
-        };
-
-        Symbol9 {
+        Symbol8 {
             bindings = <
  &trans     &kp ESC     &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &kp BACKSPACE   &trans          
- &trans     &kp TAB     &trans          &kp KP_MINUS    &kp LEFT_BRACE  &kp LPAR         &kp RPAR       &kp RIGHT_BRACE     &kp KP_PLUS     &trans          &trans          &trans
- &trans     &trans      &trans          &kp UNDERSCORE  &kp LESS_THAN   &kp LBKT         &kp RBKT       &kp GREATER_THAN    &kp EQUAL       &trans          &trans          &trans
+ &trans     &kp TAB     &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &trans          &trans
+ &trans     &trans      &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &trans          &trans
                                         &trans          &trans          &trans           &trans         &trans              &trans
                                         >;
         };
