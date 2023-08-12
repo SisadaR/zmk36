@@ -100,7 +100,7 @@
             bindings = <
    &trans    &kp Q          &kp W             &kp E         &kp R             &kp T                     &kp Y           &kp U        &kp I            &kp O       &kp P              &trans
    &trans    &lt 3 A        &mh LCTRL S       &mh LALT D    &mh LGUI F        &kp G                     &kp H           &mh RGUI J   &mh RALT K       &mh RCTRL L &lt 5 SEMICOLON    &trans
-   &trans    &mh RSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N           &kp M        &kp COMMA        &kp DOT     &mh RSHIFT FSLH    &trans
+   &trans    &mt RSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N           &kp M        &kp COMMA        &kp DOT     &mt RSHIFT FSLH    &trans
                                               &lt 7 ESC     &mo 1             &lt 4 SPACE               &lt 8 RET       &lt 2 APOS   &lt 7 BACKSPACE 
             >;
         };
