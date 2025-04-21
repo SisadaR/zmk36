@@ -10,9 +10,10 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -35,8 +36,8 @@
             bindings = <&kp TAB>;
             key-positions = <13 14>;
         };
-        
-         _gui {
+
+        _gui {
             timeout-ms = <100>;
             bindings = <&sk LGUI>;
             key-positions = <1 37>;
@@ -64,8 +65,8 @@
             timeout-ms = <100>;
             bindings = <&kp LG(SPACE)>;
             key-positions = <8 9>;
-        };       
-    };  
+        };
+    };
 
     macros {
         zed_em_kay: zed_em_kay {
@@ -81,8 +82,8 @@
                 <&kp LSHFT>;
         };
     };
-    
-     behaviors {
+
+    behaviors {
         mh: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -96,86 +97,79 @@
 
     keymap {
         compatible = "zmk,keymap";
+
         base0 {
             bindings = <
-   &trans    &kp Q          &kp W             &kp E         &kp R             &kp T                     &kp Y           &kp U        &kp I            &kp O       &kp P              &trans
-   &trans    &lt 3 A        &mh LCTRL S       &mh LALT D    &mh LGUI F        &kp G                     &kp H           &mh RGUI J   &mh RALT K       &mh RCTRL L &lt 5 SEMICOLON    &trans
-   &trans    &mt RSHIFT Z   &kp X             &kp C         &kp V             &kp B                     &kp N           &kp M        &kp COMMA        &kp DOT     &mt RSHIFT FSLH    &trans
-                                              &lt 7 ESC     &mo 1             &lt 4 SPACE               &lt 8 RET       &lt 2 APOS   &lt 7 BACKSPACE 
+&trans  &kp Q         &kp W        &kp E       &kp R       &kp T          &kp Y      &kp U       &kp I            &kp O        &kp P            &trans
+&trans  &lt 3 A       &mh LCTRL S  &mh LALT D  &mh LGUI F  &lt 6 G        &kp H      &mh RGUI J  &mh RALT K       &mh RCTRL L  &lt 5 SEMICOLON  &trans
+&trans  &mt RSHIFT Z  &kp X        &kp C       &kp V       &kp B          &kp N      &kp M       &kp COMMA        &kp DOT      &mt RSHIFT FSLH  &trans
+                                   &lt 7 ESC   &mo 1       &lt 4 SPACE    &kp ENTER  &lt 2 APOS  &lt 7 BACKSPACE
             >;
         };
-//
-    raise1 {
+
+        //
+
+        raise1 {
             bindings = <
-    &trans      &kp N1           &kp N2              &kp N3          &kp N4          &kp N5              &kp N6            &kp N7          &kp N8           &kp N9           &kp N0             &trans
-    &trans      &kp LBKT         &trans              &kp PLUS        &kp KP_MINUS    &kp LPAR            &kp RPAR          &kp MINUS       &kp EQUAL        &kp LEFT_BRACKET &kp RBKT           &trans
-    &trans      &kp LT           &trans              &kp KP_EQUAL    &kp UNDERSCORE  &kp LBRC            &kp RBRC          &trans          &trans           &trans           &kp GT             &trans
-                                                     &trans          &trans           &trans             &trans            &kp LG(SPACE)    &kp BACKSLASH
+&trans  &kp N1    &kp N2  &kp N3        &kp N4          &kp N5      &kp N6    &kp N7         &kp N8         &kp N9            &kp N0    &trans
+&trans  &kp LBKT  &trans  &kp PLUS      &kp KP_MINUS    &kp LPAR    &kp RPAR  &kp MINUS      &kp EQUAL      &kp LEFT_BRACKET  &kp RBKT  &trans
+&trans  &kp LT    &trans  &kp KP_EQUAL  &kp UNDERSCORE  &kp LBRC    &kp RBRC  &kp SQT        &trans         &trans            &kp GT    &trans
+                          &trans        &trans          &trans      &trans    &kp LG(SPACE)  &kp BACKSLASH
             >;
         };
 
         lower2 {
             bindings = <
-    &trans      &kp EXCL    &kp AT      &kp HASH    &kp DLLR        &kp PRCNT           &kp CARET   &kp AMPS    &kp KP_MULTIPLY &kp LPAR        &kp RPAR        &trans
-    &trans      &kp GRAVE   &kp TILDE   &kp F1      &kp F2          &kp F3              &kp F4      &kp F5      &kp F6          &kp LEFT_BRACE  &kp RIGHT_BRACE &trans
-    &trans      &trans      &trans      &kp F7      &kp F8          &kp F9              &kp F10     &kp F11     &kp F12         &trans          &trans          &trans
-                                        &trans      &kp LG(SPACE)   &trans              &trans      &trans      &kp PIPE
+&trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR       &trans
+&trans  &kp GRAVE  &kp TILDE  &kp F1    &kp F2         &kp F3       &kp F4     &kp F5    &kp F6           &none     &kp PIPE       &trans
+&trans  &trans     &trans     &kp F7    &kp F8         &kp F9       &kp F10    &kp F11   &kp F12          &trans    &kp BACKSLASH  &trans
+                              &trans    &kp LG(SPACE)  &trans       &trans     &trans    &kp PIPE
             >;
         };
 
         numpad3 {
             bindings = <
-  
-     &trans        &trans        &trans        &trans        &trans     &trans              &kp KP_PLUS         &kp KP_N7        &kp KP_N8  &kp KP_N9  &trans  &trans
-     &trans        &trans        &trans        &trans        &trans     &trans              &kp KP_MINUS        &kp KP_N4        &kp KP_N5  &kp KP_N6  &trans  &trans
-     &trans        &trans        &trans        &trans        &trans     &trans              &kp KP_MULTIPLY     &kp KP_N1        &kp KP_N2  &kp KP_N3  &trans  &trans
-                                               &trans        &trans     &kp EQUAL           &kp KP_SLASH        &kp KP_NUMBER_0  &kp KP_DOT
+&trans  &trans  &trans  &trans  &trans  &trans       &kp KP_PLUS      &kp KP_N7        &kp KP_N8   &kp KP_N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp KP_MINUS     &kp KP_N4        &kp KP_N5   &kp KP_N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp KP_MULTIPLY  &kp KP_N1        &kp KP_N2   &kp KP_N3  &trans  &trans
+                        &trans  &trans  &kp EQUAL    &kp KP_SLASH     &kp KP_NUMBER_0  &kp KP_DOT
             >;
         };
 
         Direction4 {
             bindings = <
- &trans     &trans          &trans          &trans          &trans          &kp INSERT              &kp HOME            &kp PAGE_DOWN   &kp PAGE_UP     &kp END             &kp BACKSPACE   &trans
- &trans     &trans          &kp LCTRL       &kp LALT        &kp LGUI        &trans                  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &kp RSHIFT      &trans
- &trans     &kp LSHIFT      &trans          &trans          &trans          &kp DEL                 &kp BACKSPACE       &trans          &trans          &trans              &trans          &trans
-                                            &trans          &trans          &kp TAB                 &kp TAB             &trans          &trans
+&trans  &trans      &trans     &trans    &trans    &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp BACKSPACE    &trans
+&trans  &trans      &kp LCTRL  &kp LALT  &kp LGUI  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none            &trans
+&trans  &kp LSHIFT  &trans     &trans    &trans    &kp DEL       &kp BACKSPACE   &trans          &trans        &trans           &kp RIGHT_SHIFT  &trans
+                               &trans    &trans    &kp TAB       &kp TAB         &trans          &trans
             >;
-        };
-         
-        number5 {
-            bindings = <
-     &trans        &trans        &trans        &trans        &trans     &trans              &kp KP_PLUS         &kp N7   &kp N8  &kp N9  &trans  &trans
-     &trans        &trans        &trans        &trans        &trans     &trans              &kp KP_MINUS        &kp N4   &kp N5  &kp N6  &trans  &trans
-     &trans        &trans        &trans        &trans        &trans     &trans              &kp KP_MULTIPLY     &kp N1   &kp N2  &kp N3  &trans  &trans
-                                               &trans        &trans     &kp EQUAL           &kp KP_SLASH        &kp N0   &kp KP_DOT
-            >;
-        };
-        
-        FixedDirection6 {
-            bindings = <
- &trans     &kp ESC      &trans          &trans          &trans          &trans               &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP     &kp END             &kp INSERT  &trans
- &trans     &kp TAB      &kp LCTRL       &kp LALT        &kp LGUI        &trans               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &trans      &trans
- &trans     &kp LSHIFT   &trans          &trans          &trans          &kp DEL              &kp BACKSPACE   &trans          &trans          &trans              &trans      &trans
-                                         &trans          &trans          &kp SPACE            &kp ENTER       &trans          &trans
-                                        >;
-        };
-        
-        Config7 {
-            bindings = <
- &trans     &trans      &bt BT_SEL 4    &bt BT_SEL 3    &bt BT_SEL 2    &bt BT_SEL 1            &bt BT_CLR      &trans          &trans          &trans          &kp CAPS    &trans
- &trans     &trans      &trans          &trans          &trans          &out OUT_TOG            &trans          &trans          &trans          &trans          &kp KP_NUM  &trans
- &trans     &trans      &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &tog 6      &trans
-                                        &trans          &trans          &trans                  &trans          &trans          &trans
-                                        >;
         };
 
-        Symbol8 {
+        number5 {
             bindings = <
- &trans     &kp ESC     &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &kp BACKSPACE   &trans          
- &trans     &kp TAB     &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &trans          &trans
- &trans     &trans      &trans          &trans          &trans          &trans           &trans         &trans              &trans          &trans          &trans          &trans
-                                        &trans          &trans          &trans           &trans         &trans              &trans
-                                        >;
+&trans  &trans  &trans  &trans  &trans  &trans       &kp KP_PLUS      &kp N7  &kp N8      &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp KP_MINUS     &kp N4  &kp N5      &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp KP_MULTIPLY  &kp N1  &kp N2      &kp N3  &trans  &trans
+                        &trans  &trans  &kp EQUAL    &kp KP_SLASH     &kp N0  &kp KP_DOT
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&trans  &kp ESC     &trans     &trans    &trans    &trans       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none   &trans
+&trans  &kp TAB     &kp LCTRL  &kp LALT  &kp LGUI  &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &kp LSHIFT  &trans     &trans    &trans    &kp DEL      &kp BACKSPACE   &mkp MB4        &mkp MB5      &trans           &trans  &trans
+                               &trans    &trans    &mkp LCLK    &mkp RCLK       &mkp MCLK       &trans
+            >;
+        };
+
+        Config7 {
+            bindings = <
+&trans  &trans  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1    &bt BT_CLR  &trans  &trans  &trans  &kp CAPS    &trans
+&trans  &trans  &trans        &trans        &trans        &out OUT_TOG    &trans      &trans  &trans  &trans  &kp KP_NUM  &trans
+&trans  &trans  &trans        &trans        &trans        &trans          &trans      &trans  &trans  &trans  &tog 6      &trans
+                              &trans        &trans        &trans          &trans      &trans  &trans
+            >;
         };
     };
 };
