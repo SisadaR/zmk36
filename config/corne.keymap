@@ -145,10 +145,10 @@
 
         Direction4 {
             bindings = <
-&trans  &trans      &trans     &trans    &trans    &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp BACKSPACE    &trans
-&trans  &trans      &kp LCTRL  &kp LALT  &kp LGUI  &trans        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none            &trans
-&trans  &kp LSHIFT  &trans     &trans    &trans    &kp DEL       &kp BACKSPACE   &trans          &trans        &trans           &kp RIGHT_SHIFT  &trans
-                               &trans    &trans    &kp TAB       &kp TAB         &trans          &trans
+&none  &kp ESCAPE  &none      &none     &none     &kp INSERT    &kp HOME        &kp PAGE_DOWN   &kp PAGE_UP   &kp END          &kp BACKSPACE    &none
+&none  &none       &kp LCTRL  &kp LALT  &kp LGUI  &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none            &none
+&none  &kp LSHIFT  &none      &none     &none     &kp DEL       &kp BACKSPACE   &none           &none         &none            &kp RIGHT_SHIFT  &none
+                              &none     &none     &kp TAB       &kp TAB         &none           &none
             >;
         };
 
